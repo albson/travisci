@@ -1,4 +1,5 @@
 language: python
+install:
+- pip install selenium
 
 script: python travis_sample.py
-
