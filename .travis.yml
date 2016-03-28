@@ -1,9 +1,16 @@
 language: python
 
+python:
+  - "2.6"
+  - "2.7"
+  - "3.2"
+  - "3.3"
+  - "3.4"
+
 install: 
 - pip install selenium pytest pytest-xdist
 
-script: py.test --boxed -n5 travis_sample.py
+script: py.test travis_sample.py
 
 env:
   global:
