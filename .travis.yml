@@ -2,6 +2,7 @@ language: python
 
 install: 
 - pip install selenium
+- pip install pytest==$PYTEST
 
 script: py.test -n5 travis_sample.py
 
