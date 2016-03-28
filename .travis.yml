@@ -1,10 +1,9 @@
 language: python
 
 install: 
-- pip install selenium
-- pip install pytest==$PYTEST
+- pip install selenium pytest pytest-xdist
 
-script: py.test -n5 travis_sample.py
+script: py.test --boxed -n5 travis_sample.py
 
 env:
   global:
@@ -13,10 +12,3 @@ env:
 
 addons:
   sauce_connect: true
-
-env:
-  - PYTEST=2.4.2
-  - PYTEST=2.5.2
-  - PYTEST=2.6.4
-  - PYTEST=2.7.0
-  - PYTEST=2.8.7
