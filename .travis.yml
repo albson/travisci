@@ -20,3 +20,4 @@ env:
 addons:
   sauce_connect: true
     direct_domains: example.org,*.foobar.com
+    no_ssl_bump_domains: all
