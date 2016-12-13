@@ -19,4 +19,3 @@ env:
 
 addons:
   sauce_connect: true
-    no_ssl_bump_domains: all
