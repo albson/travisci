@@ -22,16 +22,9 @@ driver.get('http://google.com')
 title = driver.title
 assert "Google", title
 
-time.sleep(10)
+time.sleep(3)
 
 driver.get('https://www.saucelabs.com')
 title = driver.title
 assert "Sauce Labs: Selenium Testing, Mobile Testing, JS Unit Testing and More", title
-
-time.sleep(10)
-
-driver.get('http://www.theuselessweb.com/')
-title = driver.title
-assert "The Useless Web", title
-
 driver.quit()
